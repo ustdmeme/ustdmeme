@@ -3,135 +3,64 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>USTDMEME</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0a0a0a;
-      color: #fff;
-    }
-    header {
-      padding: 20px;
-      text-align: center;
-      background: linear-gradient(90deg, #ff0080, #ffcc00);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-size: 42px;
-      font-weight: bold;
-    }
-    .hero {
-      text-align: center;
-      padding: 60px 20px;
-    }
-    .hero h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
-    }
-    .hero p {
-      font-size: 20px;
-      max-width: 600px;
-      margin: 0 auto;
-      opacity: 0.8;
-    }
-    .buttons {
-      margin-top: 30px;
-    }
-    .btn {
-      padding: 14px 28px;
-      background: #ff0080;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 8px;
-      margin: 10px;
-      display: inline-block;
-      font-size: 18px;
-      transition: 0.25s;
-    }
-    .btn:hover {
-      background: #ffcc00;
-      color: #000;
-    }
-    .section {
-      padding: 60px 20px;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-    .section h2 {
-      font-size: 32px;
-      margin-bottom: 15px;
-      text-align: center;
-    }
-    .card-container {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .card {
-      background: #111;
-      padding: 20px;
-      border-radius: 12px;
-      width: 260px;
-      text-align: center;
-      border: 1px solid #333;
-    }
-    footer {
-      text-align: center;
-      padding: 30px;
-      margin-top: 40px;
-      opacity: 0.6;
-      font-size: 14px;
-    }
-  </style>
+  <title>USTD Stable</title>
+  <link rel="icon" type="image/png" href="logo.png" />
   <style>
     body { margin: 0; font-family: Arial, sans-serif; background: #0a0a0a; color: #fff; }
-    header { padding: 20px; text-align: center; background: linear-gradient(90deg, #ff0080, #ffcc00); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 42px; font-weight: bold; animation: fadeIn 2s ease-in-out; }
-
-    @keyframes fadeIn { from { opacity: 0; transform: translateY(-20px);} to { opacity: 1; transform: translateY(0);} }
-    @keyframes float { 0% { transform: translateY(0);} 50% { transform: translateY(-10px);} 100% { transform: translateY(0);} }
-    @keyframes glow { 0% { box-shadow: 0 0 10px #ff0080;} 50% { box-shadow: 0 0 25px #ffcc00;} 100% { box-shadow: 0 0 10px #ff0080;} }
-
-    .hero {
-      text-align: center; padding: 60px 20px; animation: fadeIn 1.5s ease-in-out;
+    header {
+      padding: 20px; text-align: center;
+      background: linear-gradient(90deg, #ff0080, #ffcc00);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      font-size: 42px; font-weight: bold; animation: fadeIn 2s ease-in-out;
     }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+    .hero { text-align: center; padding: 60px 20px; animation: fadeIn 1.5s ease-in-out; }
     .hero h1 { font-size: 48px; margin-bottom: 10px; animation: float 4s ease-in-out infinite; }
-    .btn { padding: 14px 28px; background: #ff0080; color: #fff; text-decoration: none; border-radius: 8px; margin: 10px; display: inline-block; font-size: 18px; transition: 0.25s; animation: glow 3s infinite; }
+    @keyframes float { 0% { transform: translateY(0); } 50% { transform: translateY(-10px); } 100% { transform: translateY(0); } }
+    .btn {
+      padding: 14px 28px; background: #ff0080; color: #fff; text-decoration: none;
+      border-radius: 8px; margin: 10px; display: inline-block; font-size: 18px;
+      transition: 0.25s; animation: glow 3s infinite;
+    }
     .btn:hover { background: #ffcc00; color: #000; transform: scale(1.05); }
+    @keyframes glow { 0% { box-shadow: 0 0 10px #ff0080; } 50% { box-shadow: 0 0 25px #ffcc00; } 100% { box-shadow: 0 0 10px #ff0080; } }
+    .section { padding: 60px 20px; max-width: 900px; margin: 0 auto; }
+    .section h2 { font-size: 32px; margin-bottom: 15px; text-align: center; }
+    .card-container { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; }
+    .card { background: #111; padding: 20px; border-radius: 12px; width: 260px; text-align: center; border: 1px solid #333; }
+    footer { text-align: center; padding: 30px; margin-top: 40px; opacity: 0.6; font-size: 14px; }
   </style>
 </head>
 <body>
-  <header>USTDMEME</header>
+  <header>USTD STABLE COIN</header>
 
   <div class="hero">
-    <h1>The Next-Gen Meme Token</h1>
-    <p>Topluluğu odak noktası yapan, eğlenceyi blockchain gücüyle birleştiren gelecek nesil meme token.</p>
-
+    <h1>The Next-Generation Stable Meme Token</h1>
+    <p>A community-powered project combining stability, blockchain technology, and meme culture.</p>
     <div class="buttons">
-      <a href="#buy" class="btn">Satın Al</a>
+      <a href="#buy" class="btn">Buy Now</a>
       <a href="#tokenomics" class="btn">Tokenomics</a>
-      <a href="#links" class="btn">Sosyal Bağlantılar</a>
+      <a href="#links" class="btn">Social Links</a>
     </div>
   </div>
 
   <div class="section" id="tokenomics">
     <h2>Tokenomics</h2>
     <div class="card-container">
-      <div class="card"><h3>Toplam Arz</h3><p>1,000,000,000</p></div>
-      <div class="card"><h3>Likidite</h3><p>Kilitleme Aktif</p></div>
-      <div class="card"><h3>Vergi</h3><p>%0 Alım / %0 Satış</p></div>
+      <div class="card"><h3>Total Supply</h3><p>21,500,000</p></div>
+      <div class="card"><h3>Liquidity</h3><p>Locked</p></div>
     </div>
   </div>
 
   <div class="section" id="links">
-    <h2>Sosyal Bağlantılar</h2>
+    <h2>Social Links</h2>
     <div class="card-container">
-      <div class="card"><h3>Telegram</h3><p>@ustdmeme</p></div>
-      <div class="card"><h3>Twitter</h3><p>@ustdmeme</p></div>
-      <div class="card"><h3>BscScan</h3><p>Contract Address</p></div>
+      <div class="card"><h3>Twitter</h3><p><a href="https://twitter.com/your_twitter" style="color: #fff;">@your_twitter</a></p></div>
+      <div class="card"><h3>Telegram</h3><p><a href="https://t.me/your_telegram" style="color: #fff;">t.me/your_telegram</a></p></div>
+      <div class="card"><h3>Contract</h3><p><a href="https://bscscan.com/address/your_contract" style="color: #fff;">Click to see</a></p></div>
     </div>
   </div>
 
-  <footer>© 2025 USTDMEME – All Rights Reserved</footer>
+  <footer>© 2025 USTD STABLE COIN – All Rights Reserved</footer>
 </body>
 </html>
